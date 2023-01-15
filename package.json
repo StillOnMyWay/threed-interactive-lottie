@@ -1,0 +1,35 @@
+{
+  "name": "lix-lottie",
+  "private": true,
+  "version": "0.0.2",
+  "type": "module",
+  "main": "dist/lix-lottie.iife.js",
+  "author": "Threed Software",
+  "bin": "LixComponents",
+  "repository": {
+    "url": "https://threedsoftware.com"
+  },
+  "exports": {
+    ".": "./dist/lix-lottie.iife.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "node package/deploy.js",
+    "build-deploy": "vite build && node package/deploy.js"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.0",
+    "@lottiefiles/lottie-player": "^1.5.7",
+    "lit": "^2.2.6",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "node-fetch": "^3.2.6",
+    "rollup-plugin-javascript-obfuscator": "^1.0.4",
+    "vite": "^2.9.12",
+    "vite-plugin-obfuscator": "^1.0.5"
+  }
+}
